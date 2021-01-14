@@ -1,0 +1,10 @@
+{
+    "schedule": "daily", // daily|weekly|monthly
+    "ignoredFiles": [
+    
+    "/assets/logos/uiuxarghya logo-black.png",
+    
+    ],
+    "aggressiveCompression": "true",
+    "compressWiki": "true",
+}
