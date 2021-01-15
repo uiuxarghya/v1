@@ -1,4 +1,4 @@
-var sbiajaxurl = "https://themebubble.com/demo/webify/portfolio-section/wp-admin/admin-ajax.php"; (function ($) {
+(function ($) {
     'use strict'; if (typeof wpcf7 === 'undefined' || wpcf7 === null) { return }
     wpcf7 = $.extend({ cached: 0, inputs: [] }, wpcf7); $(function () { wpcf7.supportHtml5 = (function () { var features = {}; var input = document.createElement('input'); features.placeholder = 'placeholder' in input; var inputTypes = ['email', 'url', 'tel', 'number', 'range', 'date']; $.each(inputTypes, function (index, value) { input.setAttribute('type', value); features[value] = input.type !== 'text' }); return features })(); $('div.wpcf7 > form').each(function () { var $form = $(this); wpcf7.initForm($form); if (wpcf7.cached) { wpcf7.refill($form) } }) }); wpcf7.getId = function (form) { return parseInt($('input[name="_wpcf7"]', form).val(), 10) }; wpcf7.initForm = function (form) {
         var $form = $(form); wpcf7.setStatus($form, 'init'); $form.submit(function (event) {
