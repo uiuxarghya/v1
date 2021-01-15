@@ -1,7 +1,8 @@
 {
     "schedule": "daily", // daily|weekly|monthly
     "ignoredFiles": [
-    
+
+    "/pages/site-pages/img/profile-img.png",
     "/assets/logos/uiuxarghya logo-black.png",
     
     ],
